@@ -18,9 +18,8 @@ body
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.0) , #000000);
 }
-#header-background
+#background-image
 {
-    width: 100%;
     background-image: url(img/background.png);
     background-size: 100%;
     background-position: top;
@@ -400,7 +399,7 @@ nav .fas
 
 @media only screen and (max-width: 720px)
 {
-    #header-background
+    #background-image
     {
         background-image: url(img/phone-background.png);
     }
