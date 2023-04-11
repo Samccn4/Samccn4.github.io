@@ -319,16 +319,23 @@ nav ul li a:hover::after
 {
     flex-basis: 60%;
 }
-.contact-left p
+#TextContacts
 {
+    display: flex;
+    align-items: center;
     margin-top: 30px;
 }
-.contact-left p svg
+#TextContacts svg
 {
     color: #00ff00;
     margin-right: 15px;
     width: 30px;
     height: 30px;
+}
+#TextContacts div
+{
+    margin-left: auto;
+    color: #00ff00;
 }
 .social-icons
 {
