@@ -20,7 +20,7 @@ body
 }
 #background-image
 {
-    background-image: url(img/background.png);
+    background-image: url(media/background.png);
     background-size: 100%;
     background-position: top;
     background-attachment: fixed;
