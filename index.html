@@ -10,7 +10,16 @@
 
     gtag('config', 'G-Z2Y2R44JQ2');
     </script>
-
+    <!-- glMatrix -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+      integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+      crossorigin="anonymous"
+      defer>
+    </script>
+    <script src="scripts/init-buffers.js" defer></script>
+    <script src="scripts/draw-scene.js"  defer></script>
+    <script src="scripts/webgl-main.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" 
@@ -23,7 +32,7 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="img/Logo.png" class="logo">
+                    <img src="media/Logo.png" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -45,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="img/SidePic.jpg">
+                        <img src="media/SidePic.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
@@ -149,7 +158,7 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="img/SidePic.jpg">
+                        <img src="media/SidePic.jpg">
                         <div class="layer">
                             <h3>The Beginning</h3>
                             <p>The start of C++ coding.</p>
@@ -161,7 +170,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="img/SidePic.jpg">
+                        <video autoplay loop><source src="media/unity-Project.mp4" type="video/mp4"></video>
                         <div class="layer">
                             <h3>Moving & Learning</h3>
                             <p>While learning C++, I start learning Unity and C# making small games and mods.</p>
@@ -173,7 +182,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="img/SidePic.jpg">
+                        <canvas id="glcanvas" width="500" height="700"></canvas>
                         <div class="layer">
                             <h3>Making Games on the Web</h3>
                             <p>Started getting into JavaScript and just how amazing it is with 2D and 3D graphics.</p>

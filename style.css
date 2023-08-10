@@ -237,11 +237,28 @@ nav ul li a:hover::after
 .work
 {
     border-radius: 10px;
+    width: 480px;
+    height: 646px;
     position: relative;
     overflow: hidden;
     
 }
 .work img
+{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work video
+{
+    width: 100%;
+    transform: scale(1.075);
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work canvas
 {
     width: 100%;
     border-radius: 10px;
@@ -269,7 +286,12 @@ nav ul li a:hover::after
 }
 .layer h3
 {
-    /*font-weight: 500;*/
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.layer p
+{
+    font-size: 16px;
     margin-bottom: 20px;
 }
 .layer a
@@ -288,6 +310,14 @@ nav ul li a:hover::after
     height: 40px;
 }
 .work:hover img
+{
+    transform: scale(1.1);
+}
+.work:hover video
+{
+    transform: scale(1.175);
+}
+.work:hover canvas
 {
     transform: scale(1.1);
 }
